@@ -51,6 +51,31 @@
 </div>
 </div>
 </div>
+<script>
+   const iamgeArr = [
 
+        "image/MAHABALESHWAR.jpg",
+        "image/SHIRDI.jpg",
+        "image/NASIK.jpg",
+        "image/MUMBAI.jpg",
+        "image/KHANDALA.jpg",
+        "image/AURANGABAD.jpg",
+        "image/KOLAD.jpg",
+        
+    ]
+    let imageIndex = 0;
+
+    function pre (){
+        if(imageIndex==0){
+            imageIndex = iamgeArr.length - 1;
+        }
+        else{
+            imageIndex--;
+        }
+    const imageElement = document.getElementById("image");
+    imageElement.src = iamgeArr[imageIndex];
+    };
+
+</script>
 </body>
 </html>
