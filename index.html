@@ -75,7 +75,17 @@
     const imageElement = document.getElementById("image");
     imageElement.src = iamgeArr[imageIndex];
     };
-
+    function next(){
+        if(imageIndex == iamgeArr.length - 1){
+            imageIndex=0;
+        }
+        else{
+            imageIndex++;
+        }
+    const imageElement = document.getElementById("image");
+    imageElement.src = iamgeArr[imageIndex];
+  
+    };
 </script>
 </body>
 </html>
